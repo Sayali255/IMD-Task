@@ -867,7 +867,7 @@ function onKeyUp(event) {
   //     templating(arr);
   //   }
   // })
-  if (event.code === "Enter") {
+  if (event.code === "13") {
     movieArr.forEach((ele) => {
       if (ele.title.toLowerCase().includes(searchVal)) {
         console.log(ele);
