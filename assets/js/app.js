@@ -856,19 +856,40 @@ const searchBar = document.getElementById('searchMovie');
 searchBar.addEventListener('keyup', onKeyUp);
 //  searchIcon.addEventListener('click',onClick);
 
+
+
+
+// function onKeyUp(event) {
+//   templating(movieArr);
+//   let searchVal = event.target.value;
+//   let arr = [];
+//   movieArr.forEach((ele) => {
+//     if (ele.title.toLowerCase().includes(searchVal)) {
+//       console.log(ele);
+//       arr.push(ele);
+//       templating(arr);
+//     }
+//   })
+//   if (event.code === "Enter") {
+//     movieArr.forEach((ele) => {
+//       if (ele.title.toLowerCase().includes(searchVal)) {
+//         console.log(ele);
+//         arr.push(ele);
+//         templating(arr);
+//       }
+//     })
+//   }
+// }
+
+
+
+
 function onKeyUp(event) {
   templating(movieArr);
   let searchVal = event.target.value;
   let arr = [];
-  // movieArr.forEach((ele) => {
-  //   if (ele.title.toLowerCase().includes(searchVal)) {
-  //     console.log(ele);
-  //     arr.push(ele);
-  //     templating(arr);
-  //   }
-  // })
   if (event.code === "Enter") {
-    movieArr.forEach((ele) => {
+    movieArr.filter((ele) => {
       if (ele.title.toLowerCase().includes(searchVal)) {
         console.log(ele);
         arr.push(ele);
@@ -877,4 +898,5 @@ function onKeyUp(event) {
     })
   }
 }
+
 

@@ -35,7 +35,7 @@ body{
     left: 0;
     right: 0;
     transform:translateY(101%);
-    /* height:75%; */
+    height:75%;
     overflow-y: auto;
     transition: all .3s ease-in-out;
     font-style: italic;
